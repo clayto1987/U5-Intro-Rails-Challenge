@@ -27,3 +27,14 @@
 <br />
 
 <%= link_to 'New Product', new_product_path %>
+
+<br/>
+
+<h4>Average Product Price: $<%= @product_info[:price_average].round(2)%></h4>
+<h4>Maximum Product Price: $<%= @product_info[:max_price].round(2)%></h4>
+<h4>Total Number of Products: <%= @products.count%></h4>
+<h4>Total Stock Quantity: <%= @product_info[:total_stock]%></h4>
+
+<% 100.times do %>
+    <p>Chunky Bacon</p>
+<% end %>
